@@ -728,7 +728,8 @@
 
   @media (max-width: 768px) {
     nav { display: none; }
-    .nav-mobile-open nav { display: flex; flex-direction: column; position: fixed; inset: 72px 0 0 0; background: var(--ice); padding: 40px 5%; gap: 24px; z-index: 99; }
+    .nav-mobile-open header { height: 100dvh; align-items: flex-start; flex-direction: column; padding-top: 0; }
+    .nav-mobile-open nav { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; bottom: 0; background: var(--ice); padding: 40px 5%; gap: 24px; z-index: 99; overflow-y: auto; }
     .nav-mobile-open nav a { font-size: 16px; }
     .header-cta { display: none; }
     .hamburger { display: flex; }
